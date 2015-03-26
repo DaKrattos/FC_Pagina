@@ -1,0 +1,87 @@
+body.cus-TagBody{
+	
+	background-attachment: fixed;
+	background-image: url(img/Flor_background_export.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family:Tahoma, Geneva, sans-serif;
+	margin: 0px;
+}
+div.cus-Main{
+	
+	height: 1000px;
+	width: 100%;
+}
+div.cus-LogoPattern{
+	background-image: url(img/Header_form_patt.png);
+	background-position: Top Center;
+	background-repeat: no-repeat;
+	min-height: 70px;
+}
+div.cus-LogoWrapper{
+	position: relative;
+	width: 379px;
+}
+img.cus-Logo{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+div.cus-Menu{
+	background-image:url(img/Flor_Menu_pattern.png);
+	background-position: Left Center;
+	background-repeat: repeat-x;
+	min-height: 50px;
+}
+div.cus-MGroup > div{
+	display: flex;
+}
+div.cus-MGroup > div > a > div.cus-Item{
+	float: left;
+	height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 50px;
+	text-align: center;
+	min-width: 155px;
+}
+div.cus-MGroup > div > a > div.cus-Item:hover{
+	background-image: url(img/Flor_Menu_over.png);
+}
+div.cus-MGroup > div > a > div.cus-Item > img.cus-MItem {
+	display: inline-block;
+	position: relative;
+	top: 14px;
+}
+div.cus-Header,div.cus-Footer{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+div.cus-Header{
+	background-color: #FFF;
+	top: 0;
+}
+div.cus-Header-B{
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+}
+div.cus-Header-B > div{
+	display: inline-block;
+}
+div.cus-Header-B > div > div{
+	display: table-cell;
+}
+div.cus-Body{
+	padding-top: 70px;
+}
+div.cus-Footer{
+	background-color: #FFF;
+	bottom: 0;
+}
+div.cus-Footer > div.cus-Separator{
+	background-image:url(img/Flor_footer_line.png);
+	min-height: 15px;
+}
