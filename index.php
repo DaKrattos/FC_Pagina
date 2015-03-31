@@ -28,17 +28,17 @@
                         <div>
                             <a>
                                 <div class="cus-Item">
-                                    <img class="cus-MItem" src="Resources/img/Flor_labels_solitarios.png" />
+                                    <img gl-id="SOL" class="cus-MItem" src="Resources/img/Flor_labels_solitarios.png" onclick="ChoseGal(this);" />
                                 </div>
                             </a>
                             <a>
                                 <div class="cus-Item">
-                                    <img class="cus-MItem" src="Resources/img/Flor_labels_canastas.png" />
+                                    <img gl-id="CAN" class="cus-MItem" src="Resources/img/Flor_labels_canastas.png" onclick="ChoseGal(this);" />
                                 </div>
                             </a>
                             <a>
                                 <div class="cus-Item">
-                                    <img class="cus-MItem" src="Resources/img/Flor_labels_centromesa.png" />
+                                    <img gl-id="CTM" class="cus-MItem" src="Resources/img/Flor_labels_centromesa.png" onclick="ChoseGal(this);" />
                                 </div>
                             </a>
                         </div>
@@ -52,17 +52,17 @@
                         <div>
                             <a>
                                 <div class="cus-Item">
-                                    <img class="cus-MItem" src="Resources/img/Flor_labels_especiales.png" />
+                                    <img gl-id="ESP" class="cus-MItem" src="Resources/img/Flor_labels_especiales.png" onclick="ChoseGal(this);" />
                                 </div>
                             </a>
                             <a>
                                 <div class="cus-Item">
-                                    <img class="cus-MItem" src="Resources/img/Flor_labels_exoticos.png" />
+                                    <img gl-id="EXO" class="cus-MItem" src="Resources/img/Flor_labels_exoticos.png" onclick="ChoseGal(this);" />
                                 </div>
                             </a>
                             <a>
                                 <div class="cus-Item">
-                                    <img class="cus-MItem" src="Resources/img/Flor_labels_fruteros.png" />
+                                    <img class="cus-MItem" src="Resources/img/Flor_labels_fruteros.png" onclick="ChoseGal(this);" />
                                 </div>
                             </a>
                         </div>
@@ -130,31 +130,41 @@
     <script src="Resources/GammaGallery/js/jquerypp.custom.js"></script>
     <script src="Resources/GammaGallery/js/gamma.js"></script>
     <script type="text/javascript">
-			
-			$(function() {
-
-				var GammaSettings = {
-						// order is important!
-						viewport : [ {
-							width : 1200,
-							columns : 5
-						}, {
-							width : 900,
-							columns : 4
-						}, {
-							width : 500,
-							columns : 3
-						}, { 
-							width : 320,
-							columns : 2
-						}, { 
-							width : 0,
-							columns : 2
-						} ]
-				};
-
-				Gamma.init( GammaSettings);
-			});
+		
+        function ChoseGal(mt) {
+            var gl = mt.getAttribute('gl-id');
+            
+            if(gl!="" && gl!=null)
+            {
+                //alert('Hola!'+gl);
+                window.location.search = "?gl="+gl;
+            }
+        }
+		
+        $(function() {
+        
+        	var GammaSettings = {
+        			// order is important!
+        			viewport : [ {
+        				width : 1200,
+        				columns : 5
+        			}, {
+        				width : 900,
+        				columns : 4
+        			}, {
+        				width : 500,
+        				columns : 3
+        			}, { 
+        				width : 320,
+        				columns : 2
+        			}, { 
+        				width : 0,
+        				columns : 2
+        			} ]
+        	};
+        
+        	Gamma.init( GammaSettings);
+        });
 	</script>
     
 </body>
