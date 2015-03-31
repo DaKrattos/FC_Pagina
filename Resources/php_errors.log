@@ -1,0 +1,8 @@
+[26-Mar-2015 18:35:27 UTC] PHP Notice:  Array to string conversion in /home/ubuntu/workspace/Resources/php/gallery.php on line 10
+[26-Mar-2015 18:53:37 UTC] PHP Notice:  Undefined index: typ in /home/ubuntu/workspace/Resources/php/gallery.php on line 2
+[26-Mar-2015 18:53:37 UTC] PHP Notice:  Undefined index: gal in /home/ubuntu/workspace/Resources/php/gallery.php on line 3
+[26-Mar-2015 18:53:46 UTC] PHP Notice:  Undefined index: typ in /home/ubuntu/workspace/Resources/php/gallery.php on line 2
+[26-Mar-2015 18:53:46 UTC] PHP Notice:  Undefined index: gal in /home/ubuntu/workspace/Resources/php/gallery.php on line 3
+[26-Mar-2015 18:54:05 UTC] PHP Notice:  Undefined index: gal in /home/ubuntu/workspace/Resources/php/gallery.php on line 3
+[26-Mar-2015 18:54:05 UTC] PHP Notice:  Undefined variable: files in /home/ubuntu/workspace/Resources/php/gallery.php on line 22
+[26-Mar-2015 18:54:50 UTC] PHP Notice:  Undefined index: gal in /home/ubuntu/workspace/Resources/php/gallery.php on line 3

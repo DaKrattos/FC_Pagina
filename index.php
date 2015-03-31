@@ -71,7 +71,8 @@
             </div>
         </div>
         <div class="cus-Body">
-        	            <div class="container">
+            <!--
+            <div class="container">
                 <div class="main">
                     <header class="clearfix">
                     </header>
@@ -105,7 +106,12 @@
                     </div>
                 </div>
             </div>
-
+            -->
+            <?php
+            
+                include("./Resources/php/gallery.php");
+            ?>
+            
         </div>
         <div class="cus-Footer">
         	<div class="cus-Separator"></div>
@@ -116,42 +122,6 @@
         </div>
     </div>
 	
-	<!--
-            <div class="container">
-                <div class="main">
-                    <header class="clearfix">
-                    </header>
-                    <div class="gamma-container gamma-loading" id="gamma-container">
-                        <ul class="gamma-gallery">
-         <?php
-            /*
-            $files = glob("Resources/Gallery/Solitarios/*.*");
-            for ($i=0; $i<count($files); $i++)
-            {
-                $img 	= $files[$i];
-                $name 	= basename($img,'.jpg');
-            */
-        ?>
-                        <li>
-                            <div data-description="<h3><?php/* echo $name */?></h3>">
-        <?php
-                /*
-                echo "<div data-src=\"$img\"  data-min-width=\"200\"></div>";
-                */
-        ?>
-                            </div>
-                        </li>
-        <?php
-            /*
-            }
-            */
-         ?>
-                        </ul>
-                        <div class="gamma-overlay"></div>
-                    </div>
-                </div>
-            </div>
-    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     
 	<script src="Resources/GammaGallery/js/jquery.masonry.min.js"></script>
