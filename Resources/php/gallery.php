@@ -10,16 +10,34 @@
                         <ul class="gamma-gallery">
          <?php
          
+            if (empty($gallery))
+            {
+                $gallery = "SOL";
+            }
+         
             if (empty($type))
             {
-                $pth = "./Resources/Gallery/".$gallery."/*.*";
+                $pth = "./Resources/Gallery/".$gallery."/";
             }
             else
             {
-                $pth = "./../Gallery/".$gallery."/*.*";
+                $pth = "./../Gallery/".$gallery."/";
             }
             
-            echo $pth;
+            //echo $pth;
+            
+            if (is_dir($pth))
+            {
+                //echo $pth;
+            }
+            else
+            {
+                //echo "Error!";
+                $pth = str_replace($gallery,"SOL",$pth);
+            }
+            
+            $pth .= "*.*";
+            
             $files = glob($pth);
             //print_r ($files);
             
