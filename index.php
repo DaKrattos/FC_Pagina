@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Galeria - Solitarios</title>
+	<title>Cari&ntilde;o Floristeria</title>
 
 	<link rel="stylesheet" type="text/css" href="Resources/GammaGallery/css/style.css"/>
     <script src="Resources/GammaGallery/js/modernizr.custom.70736.js"></script>
@@ -22,7 +22,7 @@
             </div>
             <div class="cus-Header-B">
             	<div>
-                    <div class="cus-MGroup" style="border: solid red 1px; height: 20px; width: 20px;">
+                    <div class="cus-MGroup">
                     	<div style="height: 70px; width: 100%;">
                         </div>
                         <div>
@@ -46,7 +46,7 @@
                     <div class="cus-LogoWrapper">
                         <img class="cus-Logo" src="Resources/img/Header_form_v2.png" />
                     </div>
-                    <div class="cus-MGroup" style="border: solid red 1px; height: 20px; width: 20px;">
+                    <div class="cus-MGroup">
                     	<div style="height: 70px; width: 100%;">
                         </div>
                         <div>
@@ -62,7 +62,7 @@
                             </a>
                             <a>
                                 <div class="cus-Item">
-                                    <img class="cus-MItem" src="Resources/img/Flor_labels_fruteros.png" onclick="ChoseGal(this);" />
+                                    <img gl-id="FRU" class="cus-MItem" src="Resources/img/Flor_labels_fruteros.png" onclick="ChoseGal(this);" />
                                 </div>
                             </a>
                         </div>
@@ -71,42 +71,7 @@
             </div>
         </div>
         <div class="cus-Body">
-            <!--
-            <div class="container">
-                <div class="main">
-                    <header class="clearfix">
-                    </header>
-                    <div class="gamma-container gamma-loading" id="gamma-container">
-                        <ul class="gamma-gallery">
-         <?php
             
-            $files = glob("Resources/Gallery/Solitarios/*.*");
-            for ($i=0; $i<count($files); $i++)
-            {
-                $img 	= $files[$i];
-                $name 	= basename($img,'.jpg');
-            
-        ?>
-                        <li>
-                            <div data-description="<h3><?php echo $name ?></h3>">
-        <?php
-                
-                echo "<div data-src=\"$img\"  data-min-width=\"200\"></div>";
-                
-        ?>
-                            </div>
-                        </li>
-        <?php
-            
-            }
-            
-         ?>
-                        </ul>
-                        <div class="gamma-overlay"></div>
-                    </div>
-                </div>
-            </div>
-            -->
             <?php
             
                 include("./Resources/php/gallery.php");
@@ -115,8 +80,29 @@
         </div>
         <div class="cus-Footer">
         	<div class="cus-Separator"></div>
-            <div>
-            	<img src="Resources/img/Flor_logo_footer_v2.png" /><span>&nbsp;&nbsp;&nbsp;<img src="Resources/img/Flor_Icon_phone.png" />&nbsp;<strong>Telefonos:</strong> (+57 5) 3404788 - 3515872&nbsp;&nbsp;&nbsp;<img src="Resources/img/Flor_Icon_message.png" />&nbsp;&nbsp;&nbsp;<strong>Email:</strong> info@floristeriacarino.com</span>
+            <div class="cus-Table-Wrapper cus-FooTable-Wrapper">
+                <div class="cus-Table cus-FooTable">
+                    <div class="cus-Table-Row">
+                        <div class="cus-Table-Cell cus-Table-Rowspanned cus-Footer-Logo cus-FooTable-Cell">
+                            <img src="Resources/img/Flor_logo_footer_v2.png" />
+                        </div>
+                        <div class="cus-Table-Cell cus-FooTable-Cell">
+                            <span><img src="Resources/img/Flor_Icon_address.png" />&nbsp;<strong>Direccion:</strong> Calle 61 # 37-72, Barranquilla, Atl, CO</span>
+                        </div>
+                    </div>
+                    <div class="cus-Table-Row">
+                        <div class="cus-Table-Cell cus-Table-Empty cus-Footer-Logo cus-FooTable-Cell"></div>
+                        <div class="cus-Table-Cell cus-FooTable-Cell">
+                            <span><img src="Resources/img/Flor_Icon_phone.png" />&nbsp;<strong>Telefonos:</strong> (+57 5) 3404788 - 3515872</span>
+                        </div>
+                    </div>
+                    <div class="cus-Table-Row">
+                        <div class="cus-Table-Cell cus-Table-Empty cus-Footer-Logo cus-FooTable-Cell"></div>
+                        <div class="cus-Table-Cell cus-FooTable-Cell">
+                            <span><img src="Resources/img/Flor_Icon_message.png" />&nbsp;<strong>Email:</strong> info@floristeriacarino.com</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="cus-Separator"></div>
         </div>

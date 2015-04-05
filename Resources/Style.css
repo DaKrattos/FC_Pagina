@@ -5,6 +5,7 @@ body.cus-TagBody{
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family:Tahoma, Geneva, sans-serif;
+	font-size: 12pt;
 	margin: 0px;
 }
 div.cus-Main{
@@ -72,6 +73,11 @@ div.cus-Header-B > div{
 	display: inline-block;
 }
 div.cus-Header-B > div > div{
+	/*
+	border-top-color: red;
+	border-top-style: solid;
+	border-top-width: 1px;
+	*/
 	display: table-cell;
 }
 div.cus-Body{
@@ -84,4 +90,47 @@ div.cus-Footer{
 div.cus-Footer > div.cus-Separator{
 	background-image:url(img/Flor_footer_line.png);
 	min-height: 15px;
+}
+div.cus-Footer-Logo{
+	width: 140px !important;
+}
+div.cus-FooTable-Wrapper{
+	height: 5em;
+}
+div.cus-FooTable{
+	left: 50%;
+	margin-left: -20em;
+	position: absolute;
+	width: 40em;
+}
+div.cus-FooTable-Cell{
+	border: none !important;
+	padding: 0.1em  !important;
+}
+
+/* Table To Divs*/
+
+div.cus-Table-Wrapper{
+	position: relative;
+}
+div.cus-Table{
+	display: table;
+}
+div.cus-Table-Row{
+	display: table-row;
+}
+div.cus-Table-Cell{
+	border: 1px solid red;
+	display: table-cell;
+	padding: 0.5em;
+}
+div.cus-Table-Cell.cus-Table-Empty{
+	border: none;
+    width: 125px;
+}
+div.cus-Table-Cell.cus-Table-Rowspanned{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 125px;
 }
