@@ -7,3 +7,7 @@ php.ini
 
 # Page Files
 /Resources/Gallery
+
+
+# Generate Files
+/Resources/php_errors.log
